@@ -28,8 +28,9 @@ Similar commands:
 but is not listing all dependencies, and has no filtering.
  rpmgraph.py (https://codeberg.org/htgoebel/rpmgraph) is using the
 RPM db and is Python 2 code.
+ dnf repograph
  dnf repoquery  --tree --requires mypackage-sub_a-3.10.10 --qf "%{name}"
-prints too many dependencies 
+both use the RPM db and print/graph too many dependencies 
 EOF
 }
 
