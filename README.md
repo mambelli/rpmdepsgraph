@@ -4,7 +4,10 @@
 
 # RPMDepsGraph
 
-Simple bash script to create a graph or RPM packages dependencies.
+Simple bash script to create a graph of RPM packages' dependencies.
+The output is in dot (<https://graphviz.org/doc/info/lang.html>) 
+directed graph format, and can be displayed or printed using the
+dotty graph editor from the graphviz package.
 
 Requires the `rpm` command.
 Just download and use it. Add it to your path if desired.
@@ -18,8 +21,10 @@ directed graph format, and can be displayed or printed using the
 dotty graph editor from the graphviz package.  
   -h       print this message
   -v       verbose mode
-  -k KEY   if 1 or more "-k" option is present, add all KEYs to a KEEP_LIST and keep only dependencies starting with one of the KEYs
-  -x KEY   if 1 or more "-x" option is present, add all KEYs to a REJECT_LIST and reject all dependencies starting with one of the KEYs
+  -k KEY   if 1 or more "-k" option is present, add all KEYs to a KEEP_LIST
+           and keep only dependencies starting with one of the KEYs
+  -x KEY   if 1 or more "-x" option is present, add all KEYs to a REJECT_LIST
+           and reject all dependencies starting with one of the KEYs
   -t STR   graph title. Defaults to "RPM Dependencies"
   -o PATH  output file path (name and directory). Defaults to stdout
 Examples:
